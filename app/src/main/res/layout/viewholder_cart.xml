@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   android:background="@drawable/gray_backgroud"
+                                                   android:layout_marginTop="8dp" android:layout_marginBottom="8dp">
+
+    <View
+            android:layout_width="70dp"
+            android:background="@drawable/white_background3"
+            android:layout_height="70dp" android:id="@+id/view7" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp" android:layout_marginTop="8dp" android:layout_marginStart="8dp"/>
+    <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp" app:srcCompat="@drawable/pic1"
+            android:id="@+id/pic1"
+            app:layout_constraintBottom_toBottomOf="@+id/view7"
+            app:layout_constraintTop_toTopOf="@+id/view7"
+            app:layout_constraintEnd_toEndOf="@+id/view7"
+            app:layout_constraintStart_toStartOf="@+id/view7"/>
+    <TextView
+            android:text="Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txttitle1"
+            android:textColor="@color/black"
+            style="@style/textStyleBold"
+            app:layout_constraintStart_toEndOf="@+id/view7"
+            app:layout_constraintTop_toTopOf="@+id/view7"
+            android:layout_marginStart="16dp"/>
+    <TextView
+            android:text="$0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtFeeeachitem"
+            app:layout_constraintBottom_toBottomOf="@+id/view7"
+            app:layout_constraintStart_toStartOf="@+id/txttitle1" android:textColor="@color/red"
+            android:textSize="18sp"/>
+    <TextView
+            android:text="$0"
+            android:textColor="@color/red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/itemtotalEach"
+            android:textStyle="bold"
+            android:textSize="18dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txttitle1"
+            android:layout_marginEnd="16dp"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="100dp"
+            android:layout_height="50dp" app:layout_constraintEnd_toEndOf="@+id/itemtotalEach"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="16dp">
+
+        <TextView
+                android:text="-"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:textColor="@color/black"
+                android:id="@+id/btnminusCart"
+                android:background="@drawable/white_background4"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.222"
+                />
+        <TextView
+                android:text="0"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtnumber"
+                app:layout_constraintBottom_toBottomOf="@+id/btnPludCart"
+                app:layout_constraintTop_toTopOf="@+id/btnPludCart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+                android:text="+"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:textColor="@color/black"
+
+                android:id="@+id/btnPludCart"
+                android:background="@drawable/white_background4"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
